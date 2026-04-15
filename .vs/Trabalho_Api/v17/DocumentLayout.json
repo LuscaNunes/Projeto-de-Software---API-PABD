@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\Documents\\ADS\\5 Periodo\\programa\u00E7\u00E3o com acesso a banco de dados\\Trabalho\\Trabalho_Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D154D4CF-902D-4102-9B16-0FC1980F6FD4}|Trabalho_Api.csproj|c:\\users\\lucas\\documents\\ads\\5 periodo\\programa\u00E7\u00E3o com acesso a banco de dados\\trabalho\\trabalho_api\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D154D4CF-902D-4102-9B16-0FC1980F6FD4}|Trabalho_Api.csproj|solutionrelative:.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\lucas\\Documents\\ADS\\5 Periodo\\programa\u00E7\u00E3o com acesso a banco de dados\\Trabalho\\Trabalho_Api\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\lucas\\Documents\\ADS\\5 Periodo\\programa\u00E7\u00E3o com acesso a banco de dados\\Trabalho\\Trabalho_Api\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAI0BAAAAAAAAAAAkwKIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-15T01:14:04.541Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
