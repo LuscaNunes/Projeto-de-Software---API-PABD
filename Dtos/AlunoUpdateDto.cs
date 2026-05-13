@@ -1,6 +1,6 @@
-﻿using ApiGerenciamentoMatricula.Models;
+﻿using Trabalho_Api.Models;
 
-namespace ApiGerenciamentoMatricula.Dtos
+namespace Trabalho_Api.Dtos
 {
     public class AlunoUpdateDto
     {

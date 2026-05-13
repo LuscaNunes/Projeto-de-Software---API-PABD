@@ -1,9 +1,10 @@
-﻿using ApiGerenciamentoMatricula.Dtos;
-using ApiGerenciamentoMatricula.Exceptions;
-using ApiGerenciamentoMatricula.Services;
+﻿
 using Microsoft.AspNetCore.Mvc;
+using Trabalho_Api.Dtos;        // ← Mudar
+using Trabalho_Api.Exceptions;   // ← Mudar
+using Trabalho_Api.Services;      // ← Mudar
 
-namespace ApiGerenciamentoMatricula.Controllers
+namespace Trabalho_Api.Controllers  // ← Mudar namespace
 {
     [Route("/avaliacoes")]
     [ApiController]
