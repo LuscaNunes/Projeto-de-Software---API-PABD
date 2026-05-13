@@ -1,10 +1,11 @@
-﻿namespace ApiGerenciamentoMatricula.Dtos
+﻿using Trabalho_Api.Models;
+namespace Trabalho_Api.Dtos
 {
     public class AvaliacaoCreateDto
     {
         public int AlunoId { get; set; }
-        public DateTime DataAvaliacao { get; set; }
-        public bool Aprovado { get; set; }
-        public string Observacoes { get; set; } = string.Empty;
+        public string NomeMusica { get; set; } = string.Empty;
+        public double Nota { get; set; }
+        public NivelMusical NivelAtingido { get; set; }
     }
 }

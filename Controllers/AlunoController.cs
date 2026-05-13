@@ -1,9 +1,9 @@
-﻿using ApiGerenciamentoMatricula.Dtos;
-using ApiGerenciamentoMatricula.Exceptions;
-using ApiGerenciamentoMatricula.Services;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Trabalho_Api.Dtos;
+using Trabalho_Api.Exceptions;
+using Trabalho_Api.Services;
 
-namespace ApiGerenciamentoMatricula.Controllers
+namespace Trabalho_Api.Controllers
 {
     [Route("/alunos")]
     [ApiController]
@@ -90,7 +90,7 @@ namespace ApiGerenciamentoMatricula.Controllers
 
         // UC03 - Remover aluno
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Remove(int id)
+        public async Task<IActionResult> Remove(int id)  // ← Mudar de ActionResult para IActionResult
         {
             try
             {

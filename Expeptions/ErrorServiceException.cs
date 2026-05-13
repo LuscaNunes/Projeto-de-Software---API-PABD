@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ApiFinanceiro.Exceptions
+namespace Trabalho_Api.Exceptions
 {
     public class ErrorServiceException : Exception
     {
