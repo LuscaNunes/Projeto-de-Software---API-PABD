@@ -9,7 +9,6 @@
         public NivelMusical NivelInicial { get; set; }
         public DateTime DataMatricula { get; set; }
 
-        // Propriedade de navegação
         public ICollection<Avaliacao>? Avaliacoes { get; set; }
     }
 }

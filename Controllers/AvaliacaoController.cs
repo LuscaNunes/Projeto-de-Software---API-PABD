@@ -1,10 +1,10 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-using Trabalho_Api.Dtos;        // ← Mudar
-using Trabalho_Api.Exceptions;   // ← Mudar
-using Trabalho_Api.Services;      // ← Mudar
+using Trabalho_Api.Dtos;        
+using Trabalho_Api.Exceptions;   
+using Trabalho_Api.Services;      
 
-namespace Trabalho_Api.Controllers  // ← Mudar namespace
+namespace Trabalho_Api.Controllers  
 {
     [Route("/avaliacoes")]
     [ApiController]
@@ -17,7 +17,7 @@ namespace Trabalho_Api.Controllers  // ← Mudar namespace
             _service = service;
         }
 
-        // UC05 - Registrar avaliação
+        
         [HttpPost()]
         public async Task<IActionResult> RegistrarAvaliacao([FromBody] AvaliacaoCreateDto avaliacaoDto)
         {
@@ -36,7 +36,7 @@ namespace Trabalho_Api.Controllers  // ← Mudar namespace
             }
         }
 
-        // UC07 - Gerar ficha de aprovação
+        
         [HttpGet("{avaliacaoId}/ficha-aprovacao")]
         public async Task<IActionResult> GerarFichaAprovacao(int avaliacaoId)
         {
@@ -55,7 +55,7 @@ namespace Trabalho_Api.Controllers  // ← Mudar namespace
             }
         }
 
-        // Listar avaliações de um aluno
+        
         [HttpGet("aluno/{alunoId}")]
         public async Task<IActionResult> FindByAlunoId(int alunoId)
         {

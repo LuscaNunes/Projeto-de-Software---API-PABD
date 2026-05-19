@@ -1,4 +1,4 @@
-﻿namespace Trabalho_Api.Models  // ← Deve ser Trabalho_Api
+﻿namespace Trabalho_Api.Models 
 {
     public class Avaliacao
     {

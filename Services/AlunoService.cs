@@ -5,7 +5,7 @@ using Trabalho_Api.Dtos;
 using Trabalho_Api.Exceptions;
 using Trabalho_Api.Models;
 
-namespace Trabalho_Api.Services  // ← Mudar namespace
+namespace Trabalho_Api.Services  
 {
     public class AlunoService
     {

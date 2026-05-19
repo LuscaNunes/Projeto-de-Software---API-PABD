@@ -16,7 +16,6 @@ namespace Trabalho_Api.Controllers
             _service = service;
         }
 
-        // UC04 - Consultar alunos (todos ou por nome/CPF)
         [HttpGet()]
         public async Task<IActionResult> FindAll([FromQuery] string? nome, [FromQuery] string? cpf)
         {
@@ -31,7 +30,6 @@ namespace Trabalho_Api.Controllers
             }
         }
 
-        // UC04 - Consultar aluno por ID
         [HttpGet("{id}")]
         public async Task<IActionResult> FindById(int id)
         {
@@ -50,7 +48,6 @@ namespace Trabalho_Api.Controllers
             }
         }
 
-        // UC01 - Cadastrar aluno
         [HttpPost()]
         public async Task<IActionResult> Create([FromBody] AlunoCreateDto novoAluno)
         {

@@ -17,16 +17,16 @@ namespace Trabalho_Api.Services
             _context = context;
         }
 
-        // UC05 - Registrar avaliação
+        
         public async Task<AvaliacaoResponseDto> RegistrarAvaliacao(AvaliacaoCreateDto avaliacaoDto)
         {
-            // Verificar se o aluno existe
+            
             var aluno = await _context.Alunos.FindAsync(avaliacaoDto.AlunoId);
             if (aluno == null)
                 throw new ErrorServiceException("Aluno não encontrado",
                     controller => controller.NotFound(new { message = "Aluno não encontrado" }));
 
-            // Verificar se a nota é válida (0-10)
+            
             if (avaliacaoDto.Nota < 0 || avaliacaoDto.Nota > 10)
                 throw new ErrorServiceException("Nota inválida. A nota deve estar entre 0 e 10",
                     controller => controller.BadRequest(new { message = "Nota inválida. A nota deve estar entre 0 e 10" }));
