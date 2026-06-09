@@ -7,6 +7,7 @@ namespace Trabalho_Api.Dtos
         public string? NomeCompleto { get; set; }
         public int? Idade { get; set; }
         public string? Cpf { get; set; }
+        public string? Email { get; set; }
         public NivelMusical? NivelAtual { get; set; }
     }
 }

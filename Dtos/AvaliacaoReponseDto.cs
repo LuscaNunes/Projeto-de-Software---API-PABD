@@ -7,6 +7,8 @@ namespace Trabalho_Api.Dtos
         public int Id { get; set; }
         public int AlunoId { get; set; }
         public string NomeAluno { get; set; } = string.Empty;
+
+        public string? Email { get; set; }
         public string NomeMusica { get; set; } = string.Empty;
         public double Nota { get; set; }
         public NivelMusical NivelAtingido { get; set; }
