@@ -31,7 +31,6 @@ namespace Trabalho_Api.Services
                 throw new ErrorServiceException("Nota inválida. A nota deve estar entre 0 e 10",
                     controller => controller.BadRequest(new { message = "Nota inválida. A nota deve estar entre 0 e 10" }));
 
-            // Criar a avaliação
             var avaliacao = new Avaliacao
             {
                 AlunoId = avaliacaoDto.AlunoId,
@@ -44,7 +43,6 @@ namespace Trabalho_Api.Services
             _context.Avaliacoes.Add(avaliacao);
             await _context.SaveChangesAsync();
 
-            // Determinar o status
             string status = avaliacaoDto.Nota >= 7 ? "Aprovado" : "Reprovado";
 
             return new AvaliacaoResponseDto
