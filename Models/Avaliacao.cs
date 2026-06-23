@@ -9,7 +9,6 @@
         public NivelMusical NivelAtingido { get; set; }
         public DateTime DataAvaliacao { get; set; }
 
-        // Propriedade de navegação
         public Aluno? Aluno { get; set; }
     }
 }

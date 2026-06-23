@@ -18,19 +18,19 @@ namespace Trabalho_Api.DataContexts
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configurar a relação entre Aluno e Avaliacao
+            // Configura a relação entre Aluno e Avaliacao
             modelBuilder.Entity<Avaliacao>()
                 .HasOne(a => a.Aluno)
                 .WithMany(a => a.Avaliacoes)
                 .HasForeignKey(a => a.AlunoId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Configurar que CPF do aluno deve ser único
+            // Configura que CPF do aluno deve ser único
             modelBuilder.Entity<Aluno>()
                 .HasIndex(a => a.Cpf)
                 .IsUnique();
 
-            // Configurar nomes das tabelas
+            // Configura nomes das tabelas
             modelBuilder.Entity<Aluno>().ToTable("Alunos");
             modelBuilder.Entity<Avaliacao>().ToTable("Avaliacoes");
         }

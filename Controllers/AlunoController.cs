@@ -66,7 +66,7 @@ namespace Trabalho_Api.Controllers
             }
         }
 
-        // UC02 - Atualizar dados do aluno
+        // Atualizar dados do aluno
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] AlunoUpdateDto alunoDto)
         {
@@ -85,9 +85,9 @@ namespace Trabalho_Api.Controllers
             }
         }
 
-        // UC03 - Remover aluno
+        // Remover aluno
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Remove(int id)  // ← Mudar de ActionResult para IActionResult
+        public async Task<IActionResult> Remove(int id)
         {
             try
             {
@@ -104,7 +104,7 @@ namespace Trabalho_Api.Controllers
             }
         }
 
-        // UC08 - Consultar histórico do aluno
+        // Consultar histórico do aluno
         [HttpGet("{id}/historico")]
         public async Task<IActionResult> GetHistorico(int id)
         {

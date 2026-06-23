@@ -58,7 +58,7 @@ namespace Trabalho_Api.Services
             };
         }
 
-        // UC07 - Gerar ficha de aprovação
+        // Gerar ficha de aprovação
         public async Task<FichaAprovacaoDto> GerarFichaAprovacao(int avaliacaoId)
         {
             // Buscar a avaliação
